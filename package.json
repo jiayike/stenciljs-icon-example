@@ -1,0 +1,27 @@
+{
+  "name": "stenciljs-icon-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install:all": "npm i && cd ./design-system && npm i && cd ../consumer-app && npm i && cd ../",
+    "build:components": "cd ./design-system && npm run build && npm link && cd ../",
+    "addDependency": "cd ./consumer-app && npm link design-system && cd ../",
+    "start:design": "cd ./design-system/css && http-server",
+    "start:app": "npm run build:components && npm run addDependency && cd ./consumer-app && npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiayike/stenciljs-icon-example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiayike/stenciljs-icon-example/issues"
+  },
+  "homepage": "https://github.com/jiayike/stenciljs-icon-example#readme",
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}

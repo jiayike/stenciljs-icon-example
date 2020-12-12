@@ -1,0 +1,40 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: #c7ceea;
+    border: 0;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #050505;
+}
+
+button:hover, button:active {
+    background-color: #b9cef0;
+    color: #f6f6f6;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container > * {
+    margin: 5px;
+}
+
+.icon {
+    --icon-size: 1rem;
+    height: var(--icon-size);
+    width: var(--icon-size);
+    display: inline-block;
+    margin-left: 5px;
+}
