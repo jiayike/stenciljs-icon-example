@@ -14,25 +14,35 @@
 
 	<div class="container">
 		<div>
-			<h5>SVG use tag</h5>
+			<h5>SVG &lt;use&gt;</h5>
 			<button>
-				Icon 1 >
-				<my-icon-1 name="smile" size="1rem"></my-icon-1>
+				Version 1 >&nbsp;
+				<svg height="1rem" width="1rem">
+					<use xlink:href="assets/icon/sad.svg#sad"></use>
+				</svg>
 			</button>
 		</div>
 
 		<div>
-			<h5>base64 SVG</h5>
+			<h5>SVG &lt;use&gt; <br>Component</h5>
 			<button>
-				Icon 2 >
+				Version 2 >
+				<my-icon-1 name="sad" size="1rem"></my-icon-1>
+			</button>
+		</div>
+
+		<div>
+			<h5>base64 SVG <br>Component</h5>
+			<button>
+				Version 3 >
 				<my-icon-2 name="sad" size="1rem"></my-icon-2>
 			</button>
 		</div>
 
 		<div>
-			<h5>Inline SVG</h5>
+			<h5>Inline SVG <br>Component</h5>
 			<button>
-				Icon 3 >
+				Version 4 >
 				<my-icon-3 name="smile" size="1rem"></my-icon-3>
 			</button>
 		</div>
