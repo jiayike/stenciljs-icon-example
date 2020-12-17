@@ -28,7 +28,7 @@ const getTemplate = (iconPath, iconName) => {
   return `import { Component, Prop, h } from '@stencil/core';
 import svgIcon from '../../../css/assets/${iconPath}';
 
-/** @internal */
+/** @internal **/
 @Component({
   tag: 'my-icon-${iconName}',
   shadow: false,
@@ -51,7 +51,7 @@ const getTemplateSvg = (iconPath, iconName) => {
   return `import { Component, Prop, h } from '@stencil/core';
 import svgIcon from '../../../css/assets/${iconPath}';
 
-/** @internal */
+/** @internal **/
 @Component({
   tag: 'my-icon-${iconName}',
   shadow: false,

@@ -1,7 +1,7 @@
 import { Component, Prop, h } from '@stencil/core';
 import svgIcon from '../../../css/assets/smile.svg';
 
-/** @internal */
+/** @internal **/
 @Component({
   tag: 'my-icon-smile',
   shadow: false,
